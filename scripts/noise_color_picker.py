@@ -194,7 +194,7 @@ class Script(scripts.Script):
 
         img = Image.fromarray(intarray, mode="RGB")
         img = img.resize((img.width * 4, img.height * 4))  # use default resizing algo
-        img = img.crop((0, 0, orig_width, orig_height))
+        img = img.crop((0, 0, orig_height, orig_width))
 
         return img
 
