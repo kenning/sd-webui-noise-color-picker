@@ -257,7 +257,10 @@ class Script(scripts.Script):
 
         p.init_images = []
 
-        init_seed = int(seed_choice)
+        if int(seed_choice) == -1:
+            init_seed = p.all_seeds[0]
+        else:
+            init_seed = int(seed_choice)
 
         # "Seed must be between 0 and 2**32 - 1"
         init_seed = min(max(init_seed, 0), 2**32 - 1)
