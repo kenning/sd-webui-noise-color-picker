@@ -211,7 +211,6 @@ class Script(scripts.Script):
         grn_max,
         blu_min,
         blu_max,
-        greyscale,
         seed_choice,
     ):
         if not enabled or "alt_hires" in p.extra_generation_params:
@@ -278,7 +277,6 @@ class Script(scripts.Script):
                 grn_max,
                 blu_min,
                 blu_max,
-                greyscale,
                 init_seed,
             )
 
